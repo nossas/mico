@@ -1,6 +1,5 @@
 require 'webmock/rspec'
 require "mico"
-require "json"
 
 describe Mico::Member do
   before { ENV["MEURIO_TOKEN"] = "racecarsyayas" }
