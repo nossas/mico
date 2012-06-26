@@ -2,8 +2,8 @@
 require File.expand_path('../lib/mico/version', __FILE__)
 
 Gem::Specification.new do |gem|
-  gem.authors       = ["N\xC3\xADcolas Iensen"]
-  gem.email         = ["nicolas@engage.is"]
+  gem.authors       = ["N\xC3\xADcolas Iensen", "Luiz Fonseca"]
+  gem.email         = ["nicolas@engage.is", "luiz@engage.is"]
   gem.description   = %q{TODO: Write a gem description}
   gem.summary       = %q{TODO: Write a gem summary}
   gem.homepage      = ""
@@ -14,4 +14,6 @@ Gem::Specification.new do |gem|
   gem.name          = "mico"
   gem.require_paths = ["lib"]
   gem.version       = Mico::VERSION
+
+  gem.add_development_dependency("rspec")
 end
