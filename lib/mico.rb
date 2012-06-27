@@ -16,4 +16,10 @@ module Mico
       JSON.parse(HTTParty.get(URL, :query => {:token => ENV["MEURIO_TOKEN"]}).body)
     end
   end
+
+  class PetitionSignature
+    def self.find_all_by_issue_id issue_id, options = {}
+      JSON.parse(HTTParty.get("http://meurio.org.br/issues/#{issue_id}/signatures.json", :query => {:token => ENV["MEURIO_TOKEN"]}.merge(options)).body)
+    end
+  end
 end
